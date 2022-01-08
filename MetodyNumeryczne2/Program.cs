@@ -63,7 +63,7 @@ Console.WriteLine("Całkowanie: ");
 Console.WriteLine("Stała (25): ");
 for (double i = 5; i < 100; i++)
 {
-    Console.WriteLine("Krok: {0}\t R: {1:0.000}\t L: {2:0.000}\t C: {3:0.000}",
+    Console.WriteLine("Krok: {0}\t R: {1:0.000}\t T: {2:0.000}\t S: {3:0.000}",
         i,
         Integral.Rectangle(ARG, ARG2, i, Functions.Const),
         Integral.Trapezium(ARG, ARG2, i, Functions.Const),
@@ -73,7 +73,7 @@ Console.WriteLine(" --- ");
 Console.WriteLine("Wielomian (~430.83): ");
 for (double i = 5; i < 100; i++)
 {
-    Console.WriteLine("Krok: {0}\t R: {1:0.000}\t L: {2:0.000}\t C: {3:0.000}",
+    Console.WriteLine("Krok: {0}\t R: {1:0.000}\t T: {2:0.000}\t S: {3:0.000}",
         i,
         Integral.Rectangle(ARG, ARG2, i, Functions.Polynomial),
         Integral.Trapezium(ARG, ARG2, i, Functions.Polynomial),
@@ -83,7 +83,7 @@ Console.WriteLine(" --- ");
 Console.WriteLine("Funkcja trygonometryczna (-1.689): ");
 for (double i = 5; i < 100; i++)
 {
-    Console.WriteLine("Krok: {0}\t R: {1:0.000}\t L: {2:0.000}\t C: {3:0.000}",
+    Console.WriteLine("Krok: {0}\t R: {1:0.000}\t T: {2:0.000}\t S: {3:0.000}",
         i,
         Integral.Rectangle(ARG, ARG2, i, Functions.DoubleSin),
         Integral.Trapezium(ARG, ARG2, i, Functions.DoubleSin),
@@ -93,7 +93,7 @@ Console.WriteLine(" --- ");
 Console.WriteLine("Splot funkcji trygonometrycznych (0.479): ");
 for (double i = 5; i < 100; i++)
 {
-    Console.WriteLine("Krok: {0}\t R: {1:0.000}\t L: {2:0.000}\t C: {3:0.000}",
+    Console.WriteLine("Krok: {0}\t R: {1:0.000}\t T: {2:0.000}\t S: {3:0.000}",
         i,
         Integral.Rectangle(ARG, ARG2, i, Functions.SinCos),
         Integral.Trapezium(ARG, ARG2, i, Functions.SinCos),
@@ -103,7 +103,7 @@ Console.WriteLine(" --- ");
 Console.WriteLine("Funkcja wykładnicza (8882.617): ");
 for (double i = 5; i < 100; i++)
 {
-    Console.WriteLine("Krok: {0}\t R: {1:0.000}\t L: {2:0.000}\t C: {3:0.000}",
+    Console.WriteLine("Krok: {0}\t R: {1:0.000}\t T: {2:0.000}\t S: {3:0.000}",
         i,
         Integral.Rectangle(ARG, ARG2, i, Functions.TripleExp),
         Integral.Trapezium(ARG, ARG2, i, Functions.TripleExp),
